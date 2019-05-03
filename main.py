@@ -1,16 +1,23 @@
+###################################
+###  Author :  Shanu Dey        ###
+###  created at: May 1st, 2019  ###
+###################################
+
 import cv2
 import numpy as np
 import urllib.request
 
-video = 'test1BlackObjectMoving.mp4'
-cam_id1 = 'http://192.168.31.189:8080/video' #better
-cam_id2 = 'rtsp://192.168.31.189:8080/h264_ulaw.sdp' #good
-cam_id3 = 'rtsp://192.168.31.189:8080/h264_pcm.sdp' #best
-#cam_id4 = 'http://192.168.31.189:8080/onvif/device_service' #worst
+#testing video
+video = 'test.mp4'
 
-url = 'http://192.168.31.135/LED='
+#camera interfac. Here ip_address and port should be replaced with the proper one shown in the android app.
+cam_id = 'http://ip_address:port/video' 
+ 
+# add your ip address which is show in the serial monitor
+url = 'http://192.168.31.135/LED=' 
 
-cap = cv2.VideoCapture(cam_id1)
+# choose a proper interface for testing video, and or ipcamera choose and cam_id
+cap = cv2.VideoCapture(cam_id)
 
 value = 'OFF'
 
