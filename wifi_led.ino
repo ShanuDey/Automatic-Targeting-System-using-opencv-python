@@ -3,10 +3,10 @@
 
 #include <ESP8266WiFi.h>
  
-const char* ssid = "Don't Blame Me";
-const char* password = "MK8crCi9109$";
+const char* ssid = "Enter your wifi ssid here";
+const char* password = "Enter your wifi password here";
  
-int ledPin = 16; // GPIO13---D7 of NodeMCU
+int ledPin = 16; // GPIO16 -> D0 -> LASER pin
 WiFiServer server(80);
  
 void setup() {
