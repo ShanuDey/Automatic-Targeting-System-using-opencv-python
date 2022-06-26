@@ -1,4 +1,4 @@
-# Automatic-Targetting-System-using-opencv-python
+# Automatic-Targeting-System-using-opencv-python
 
 ## Steps to setup
 1) Clone this repository
